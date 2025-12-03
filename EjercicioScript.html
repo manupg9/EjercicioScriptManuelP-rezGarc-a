@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego Luces</title>
+    <link rel="stylesheet" href="EjercicioScript.css">
+</head>
+<body>
+    <h1>Juego Luces - Autor: Manuel Pérez García</h1>
+
+    <div id="container">
+        <div id="left-panel">
+            <p>Intentos: <span id="intentos">0</span></p>
+            <p>Tiempo: <span id="tiempo">0</span> s</p>
+        </div>
+
+        <div id="tablero"></div>
+
+        <div id="right-panel">
+            <h3>Dificultad</h3>
+
+            <label><input type="radio" name="dif" value="facil" checked> Fácil</label><br>
+            <label><input type="radio" name="dif" value="medio"> Medio</label><br>
+            <label><input type="radio" name="dif" value="dificil"> Difícil</label><br>
+            <label><input type="radio" name="dif" value="personalizada"> Personalizada</label>
+
+            <div id="personalizada" style="margin-top:10px;">
+                <input type="number" id="pFilas" placeholder="Filas">
+                <input type="number" id="pColumnas" placeholder="Columnas">
+                <input type="number" id="pLuces" placeholder="Luces encendidas">
+            </div>
+
+            <button id="btnIniciar">Iniciar</button>
+            <p id="mensaje"></p>
+        </div>
+    </div>
+
+    <script src="EjercicioScript.js"></script>
+</body>
+</html>
