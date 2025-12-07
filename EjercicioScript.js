@@ -48,7 +48,8 @@ function seleccionarDificultad() {
 function crearTablero() {
     const tablero = document.getElementById("tablero");
     tablero.innerHTML = ""; 
-    tablero.style.gridTemplateColumns = `repeat(${columnas}, 40px)`;
+    tablero.style.gridTemplateColumns = `repeat(${columnas}, 45px)`;
+
 
     let matriz = [];
 
@@ -126,3 +127,4 @@ function iniciarTimer() {
         document.getElementById("tiempo").textContent = tiempo;
     }, 1000);
 }
+
