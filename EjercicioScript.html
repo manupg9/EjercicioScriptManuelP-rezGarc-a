@@ -6,17 +6,23 @@
     <link rel="stylesheet" href="EjercicioScript.css">
 </head>
 <body>
-    <h1>Juego Luces - Autor: Manuel Pérez García</h1>
+
+    <h1>Juego Luces</h1>
+    <h2 class="autor">Manuel Pérez García</h2>
 
     <div id="container">
-        <div id="left-panel">
-            <p>Intentos: <span id="intentos">0</span></p>
-            <p>Tiempo: <span id="tiempo">0</span> s</p>
+
+        <div id="left-panel" class="panel">
+            <h3>Información</h3>
+            <p><strong>Intentos:</strong> <span id="intentos">0</span></p>
+            <p><strong>Tiempo:</strong> <span id="tiempo">0</span> s</p>
         </div>
 
-        <div id="tablero"></div>
+        <div id="tablero-container">
+            <div id="tablero"></div>
+        </div>
 
-        <div id="right-panel">
+        <div id="right-panel" class="panel">
             <h3>Dificultad</h3>
 
             <label><input type="radio" name="dif" value="facil" checked> Fácil</label><br>
@@ -24,17 +30,25 @@
             <label><input type="radio" name="dif" value="dificil"> Difícil</label><br>
             <label><input type="radio" name="dif" value="personalizada"> Personalizada</label>
 
-            <div id="personalizada" style="margin-top:10px;">
-                <input type="number" id="pFilas" placeholder="Filas">
-                <input type="number" id="pColumnas" placeholder="Columnas">
-                <input type="number" id="pLuces" placeholder="Luces encendidas">
+            <div id="personalizada" class="custom">
+                <label>Filas</label>
+                <input type="number" id="pFilas">
+
+                <label>Columnas</label>
+                <input type="number" id="pColumnas">
+
+                <label>Luces encendidas</label>
+                <input type="number" id="pLuces">
             </div>
 
             <button id="btnIniciar">Iniciar</button>
+
             <p id="mensaje"></p>
         </div>
+
     </div>
 
     <script src="EjercicioScript.js"></script>
 </body>
 </html>
+
